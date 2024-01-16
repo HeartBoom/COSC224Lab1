@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function validateForm() {
+        var input1 = document.getElementById("input1").value;
+        var input2 = document.getElementById("input2").value;
+        var input3 = document.getElementById("input3").value;
+        var input4 = document.getElementById("input4").value;
+
+        if (input1 === ""  input2 === ""  input3 === "" || input4 === "") {
+            alert("Please fill out all fields");
+            return false;
+        }
+        // Additional validation logic can be added here if needed
+        return true;
+        }
+    </script>
     <title>Validation Form COSC 224</title>
 </head>
 <body>
-    <form action="#" method="post">
+    <form onsubmit="validateForm()" method="post">
         <label for="Name">Name: </label>
         <input type="text" name="name" id="input1" required><br>
 
@@ -23,3 +36,4 @@
     </form>
 </body>
 </html>
+
