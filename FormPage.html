@@ -3,16 +3,12 @@
 <head>
     <script>
         function validateForm() {
-        var input1 = document.getElementById("input1").value;
-        var input2 = document.getElementById("input2").value;
-        var input3 = document.getElementById("input3").value;
-        var input4 = document.getElementById("input4").value;
+        var email = document.getElementById("email").value;
 
-        if (input1 === ""  input2 === ""  input3 === "" || input4 === "") {
-            alert("Please fill out all fields");
+        if (email.includes("@") == false || email.includes(".com") == false) {
+            alert("Please use a valid email");
             return false;
         }
-        // Additional validation logic can be added here if needed
         return true;
         }
     </script>
