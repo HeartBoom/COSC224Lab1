@@ -15,18 +15,18 @@
     <title>Validation Form COSC 224</title>
 </head>
 <body>
-    <form onsubmit="validateForm()" method="post">
+    <form onsubmit="return validateForm()">
         <label for="Name">Name: </label>
-        <input type="text" name="name" id="input1"><br>
+        <input type="text" name="name" id="name"><br>
 
         <label for="Email">Email: </label>
-        <input type="text" name="email" id="input2"><br>
+        <input type="text" name="email" id="email"><br>
 
         <label for="Program">Program: </label>
-        <input type="text" name="program" id="input3"><br>
+        <input type="text" name="program" id="program"><br>
 
         <label for="StudentID">Student: </label>
-        <input type="text" name="StudentId" id="input4"><br>
+        <input type="text" name="StudentId" id="studentID"><br>
 
         <input type="submit" value="Submit">
     </form>
