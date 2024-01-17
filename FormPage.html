@@ -5,7 +5,7 @@
         function validateForm() {
         var email = document.getElementById("email").value;
 
-        if (email.includes("@") == false || email.includes(".com") == false) {
+	if (!email.includes("@") || !email.includes(".com")) {
             alert("Please use a valid email");
             return false;
         }
@@ -25,7 +25,7 @@
         <label for="Program">Program: </label>
         <input type="text" name="program" id="program" required><br>
 
-        <label for="StudentID">Student: </label>
+        <label for="StudentID">Student ID: </label>
         <input type="text" name="StudentId" id="studentID" required><br>
         <input type="submit" value="Submit">
     </form>
